@@ -24,7 +24,7 @@ const MobileHeader = ({ showBackButton = false }: MobileHeaderProps) => {
         {/* 右侧按钮 */}
         <div className='flex items-center gap-2'>
           <ThemeToggle />
-          <UserMenu />
+          {/* <UserMenu /> */}
         </div>
       </div>
 

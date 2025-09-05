@@ -155,7 +155,7 @@ const TopNavbar = ({ activePath = '/' }: { activePath?: string }) => {
           {/* 右侧按钮 - 调整为更靠右，增加间距实现对称效果 */}
           <div className='flex items-center gap-3 -mr-2'>
             <ThemeToggle />
-            <UserMenu />
+            {/* <UserMenu /> */}
           </div>
         </div>
       </div>
