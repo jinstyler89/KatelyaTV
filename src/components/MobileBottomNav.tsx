@@ -1,6 +1,6 @@
 'use client';
 
-import { Clover, Film, Home, Search, Tv } from 'lucide-react';
+import { Search } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -18,23 +18,23 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
   const currentActive = activePath ?? pathname;
 
   const navItems = [
-    { icon: Home, label: '首页', href: '/' },
+    // { icon: Home, label: '首页', href: '/' },
     { icon: Search, label: '搜索', href: '/search' },
-    {
-      icon: Film,
-      label: '电影',
-      href: '/douban?type=movie',
-    },
-    {
-      icon: Tv,
-      label: '剧集',
-      href: '/douban?type=tv',
-    },
-    {
-      icon: Clover,
-      label: '综艺',
-      href: '/douban?type=show',
-    },
+    // {
+    //   icon: Film,
+    //   label: '电影',
+    //   href: '/douban?type=movie',
+    // },
+    // {
+    //   icon: Tv,
+    //   label: '剧集',
+    //   href: '/douban?type=tv',
+    // },
+    // {
+    //   icon: Clover,
+    //   label: '综艺',
+    //   href: '/douban?type=show',
+    // },
   ];
 
   const isActive = (href: string) => {
@@ -63,11 +63,11 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
       {/* 顶部装饰线 */}
       <div className='absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-purple-500/50 to-transparent'></div>
 
-      <ul className='flex items-center'>
+      <ul className='flex items-center justify-center'>
         {navItems.map((item) => {
           const active = isActive(item.href);
           return (
-            <li key={item.href} className='flex-shrink-0 w-1/5'>
+            <li key={item.href} className='flex-shrink-0'>
               <Link
                 href={item.href}
                 className={`flex flex-col items-center justify-center w-full h-14 gap-1 text-xs transition-all duration-200 relative ${

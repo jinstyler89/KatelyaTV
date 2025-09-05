@@ -1,4 +1,4 @@
-import { Clover, Film, Home, Search, Tv } from 'lucide-react';
+import { Search } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
@@ -44,31 +44,31 @@ const TopNavbar = ({ activePath = '/' }: { activePath?: string }) => {
   }, [router]);
 
   const menuItems = [
-    {
-      icon: Home,
-      label: '首页',
-      href: '/',
-    },
+    // {
+    //   icon: Home,
+    //   label: '首页',
+    //   href: '/',
+    // },
     {
       icon: Search,
       label: '搜索',
       href: '/search',
     },
-    {
-      icon: Film,
-      label: '电影',
-      href: '/douban?type=movie',
-    },
-    {
-      icon: Tv,
-      label: '剧集',
-      href: '/douban?type=tv',
-    },
-    {
-      icon: Clover,
-      label: '综艺',
-      href: '/douban?type=show',
-    },
+    // {
+    //   icon: Film,
+    //   label: '电影',
+    //   href: '/douban?type=movie',
+    // },
+    // {
+    //   icon: Tv,
+    //   label: '剧集',
+    //   href: '/douban?type=tv',
+    // },
+    // {
+    //   icon: Clover,
+    //   label: '综艺',
+    //   href: '/douban?type=show',
+    // },
   ];
 
   // 桌面端：顶部固定导航（fixed）

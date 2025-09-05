@@ -4,6 +4,7 @@
 
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import { Suspense, useEffect, useState } from 'react';
 
 // 客户端收藏 API
@@ -464,9 +465,6 @@ function HomeClient() {
 }
 
 export default function Home() {
-  return (
-    <Suspense>
-      <HomeClient />
-    </Suspense>
-  );
+  // 重定向到搜索页面
+  redirect('/search');
 }
