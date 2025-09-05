@@ -32,7 +32,7 @@ const MainKatelyaLogo = () => {
       <div className='logo-background-glow'></div>
 
       {/* 主 Logo */}
-      <div className='main-katelya-logo'>KatelyaTV</div>
+      <div className='main-katelya-logo'>SoulSpaTV</div>
 
       {/* 副标题 */}
       <div className='mt-3 text-center'>
@@ -65,9 +65,9 @@ const BottomKatelyaLogo = () => {
       </div>
 
       <div className='text-center'>
-        <div className='bottom-logo'>KatelyaTV</div>
+        <div className='bottom-logo'>SoulSpaTV</div>
         <div className='mt-2 text-sm text-gray-500 dark:text-gray-400 opacity-75'>
-          Powered by KatelyaTV Core
+          Powered by SoulSpaTV Core
         </div>
       </div>
     </div>
@@ -295,34 +295,34 @@ function HomeClient() {
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
                   {loading
                     ? // 加载状态显示灰色占位数据 (显示10个，2行x5列)
-                      Array.from({ length: 10 }).map((_, index) => (
-                        <div
-                          key={index}
-                          className='w-full'
-                        >
-                          <div className='relative aspect-[2/3] w-full overflow-hidden rounded-lg bg-purple-200 animate-pulse dark:bg-purple-800'>
-                            <div className='absolute inset-0 bg-purple-300 dark:bg-purple-700'></div>
-                          </div>
-                          <div className='mt-2 h-4 bg-purple-200 rounded animate-pulse dark:bg-purple-800'></div>
+                    Array.from({ length: 10 }).map((_, index) => (
+                      <div
+                        key={index}
+                        className='w-full'
+                      >
+                        <div className='relative aspect-[2/3] w-full overflow-hidden rounded-lg bg-purple-200 animate-pulse dark:bg-purple-800'>
+                          <div className='absolute inset-0 bg-purple-300 dark:bg-purple-700'></div>
                         </div>
-                      ))
+                        <div className='mt-2 h-4 bg-purple-200 rounded animate-pulse dark:bg-purple-800'></div>
+                      </div>
+                    ))
                     : // 显示真实数据，只显示前10个实现2行布局
-                      hotMovies.slice(0, 10).map((movie, index) => (
-                        <div
-                          key={index}
-                          className='w-full'
-                        >
-                          <VideoCard
-                            from='douban'
-                            title={movie.title}
-                            poster={movie.poster}
-                            douban_id={movie.id}
-                            rate={movie.rate}
-                            year={movie.year}
-                            type='movie'
-                          />
-                        </div>
-                      ))}
+                    hotMovies.slice(0, 10).map((movie, index) => (
+                      <div
+                        key={index}
+                        className='w-full'
+                      >
+                        <VideoCard
+                          from='douban'
+                          title={movie.title}
+                          poster={movie.poster}
+                          douban_id={movie.id}
+                          rate={movie.rate}
+                          year={movie.year}
+                          type='movie'
+                        />
+                      </div>
+                    ))}
                 </div>
               </section>
 
@@ -343,33 +343,33 @@ function HomeClient() {
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
                   {loading
                     ? // 加载状态显示灰色占位数据 (显示10个，2行x5列)
-                      Array.from({ length: 10 }).map((_, index) => (
-                        <div
-                          key={index}
-                          className='w-full'
-                        >
-                          <div className='relative aspect-[2/3] w-full overflow-hidden rounded-lg bg-purple-200 animate-pulse dark:bg-purple-800'>
-                            <div className='absolute inset-0 bg-purple-300 dark:bg-purple-700'></div>
-                          </div>
-                          <div className='mt-2 h-4 bg-purple-200 rounded animate-pulse dark:bg-purple-800'></div>
+                    Array.from({ length: 10 }).map((_, index) => (
+                      <div
+                        key={index}
+                        className='w-full'
+                      >
+                        <div className='relative aspect-[2/3] w-full overflow-hidden rounded-lg bg-purple-200 animate-pulse dark:bg-purple-800'>
+                          <div className='absolute inset-0 bg-purple-300 dark:bg-purple-700'></div>
                         </div>
-                      ))
+                        <div className='mt-2 h-4 bg-purple-200 rounded animate-pulse dark:bg-purple-800'></div>
+                      </div>
+                    ))
                     : // 显示真实数据，只显示前10个实现2行布局
-                      hotTvShows.slice(0, 10).map((show, index) => (
-                        <div
-                          key={index}
-                          className='w-full'
-                        >
-                          <VideoCard
-                            from='douban'
-                            title={show.title}
-                            poster={show.poster}
-                            douban_id={show.id}
-                            rate={show.rate}
-                            year={show.year}
-                          />
-                        </div>
-                      ))}
+                    hotTvShows.slice(0, 10).map((show, index) => (
+                      <div
+                        key={index}
+                        className='w-full'
+                      >
+                        <VideoCard
+                          from='douban'
+                          title={show.title}
+                          poster={show.poster}
+                          douban_id={show.id}
+                          rate={show.rate}
+                          year={show.year}
+                        />
+                      </div>
+                    ))}
                 </div>
               </section>
 
@@ -390,33 +390,33 @@ function HomeClient() {
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
                   {loading
                     ? // 加载状态显示灰色占位数据 (显示10个，2行x5列)
-                      Array.from({ length: 10 }).map((_, index) => (
-                        <div
-                          key={index}
-                          className='w-full'
-                        >
-                          <div className='relative aspect-[2/3] w-full overflow-hidden rounded-lg bg-purple-200 animate-pulse dark:bg-purple-800'>
-                            <div className='absolute inset-0 bg-purple-300 dark:bg-purple-700'></div>
-                          </div>
-                          <div className='mt-2 h-4 bg-purple-200 rounded animate-pulse dark:bg-purple-800'></div>
+                    Array.from({ length: 10 }).map((_, index) => (
+                      <div
+                        key={index}
+                        className='w-full'
+                      >
+                        <div className='relative aspect-[2/3] w-full overflow-hidden rounded-lg bg-purple-200 animate-pulse dark:bg-purple-800'>
+                          <div className='absolute inset-0 bg-purple-300 dark:bg-purple-700'></div>
                         </div>
-                      ))
+                        <div className='mt-2 h-4 bg-purple-200 rounded animate-pulse dark:bg-purple-800'></div>
+                      </div>
+                    ))
                     : // 显示真实数据，只显示前10个实现2行布局
-                      hotVarietyShows.slice(0, 10).map((show, index) => (
-                        <div
-                          key={index}
-                          className='w-full'
-                        >
-                          <VideoCard
-                            from='douban'
-                            title={show.title}
-                            poster={show.poster}
-                            douban_id={show.id}
-                            rate={show.rate}
-                            year={show.year}
-                          />
-                        </div>
-                      ))}
+                    hotVarietyShows.slice(0, 10).map((show, index) => (
+                      <div
+                        key={index}
+                        className='w-full'
+                      >
+                        <VideoCard
+                          from='douban'
+                          title={show.title}
+                          poster={show.poster}
+                          douban_id={show.id}
+                          rate={show.rate}
+                          year={show.year}
+                        />
+                      </div>
+                    ))}
                 </div>
               </section>
 
@@ -428,9 +428,8 @@ function HomeClient() {
       </div>
       {announcement && showAnnouncement && (
         <div
-          className={`fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm dark:bg-black/70 p-4 transition-opacity duration-300 ${
-            showAnnouncement ? '' : 'opacity-0 pointer-events-none'
-          }`}
+          className={`fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm dark:bg-black/70 p-4 transition-opacity duration-300 ${showAnnouncement ? '' : 'opacity-0 pointer-events-none'
+            }`}
         >
           <div className='w-full max-w-md rounded-xl bg-white p-6 shadow-xl dark:bg-gray-900 transform transition-all duration-300 hover:shadow-2xl'>
             <div className='flex justify-between items-start mb-4'>
